@@ -8,8 +8,8 @@ import { Provider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Stack Template",
-  description: "A Multi-tenant Next.js Starter Template",
+  title: "Nito - Boost Your Online Presence",
+  description: "Nito is your go-to platform for increasing followers, views, and engagement across YouTube, Facebook, Instagram, and more. Elevate your digital footprint today!",
 };
 
 export default function RootLayout({
