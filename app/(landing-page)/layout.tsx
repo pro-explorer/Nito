@@ -1,5 +1,6 @@
 import { Footer } from "@/components/footer";
 import { LandingPageHeader } from "@/components/landing-page-header";
+import { stackServerApp } from "@/stack";
 
 export default function Layout(props: { children: React.ReactNode }) {
   return (
@@ -9,16 +10,17 @@ export default function Layout(props: { children: React.ReactNode }) {
           { title: "Home", href: "/" },
           { title: "Features", href: "/#features" },
           { title: "Pricing", href: "/#pricing" },
-          { title: "Github", href: "https://github.com/stack-auth/stack-template", external: true },
+          { title: "Sign Up", href: stackServerApp.urls.signUp },
+          { title: "Sign In", href: stackServerApp.urls.signIn },
         ]}
       />
       <main className="flex-1">{props.children}</main>
       <Footer
-        builtBy="Stack Auth"
-        builtByLink="https://stack-auth.com/"
-        githubLink="https://github.com/stack-auth/stack-template"
-        twitterLink="https://twitter.com/stack_auth"
-        linkedinLink="linkedin.com/company/stack-auth"
+        builtBy="Nito"
+        builtByLink="https://www.nito.com/"
+        githubLink="https://github.com/nito" // Replace with actual GitHub if applicable
+        twitterLink="https://twitter.com/nito" // Replace with actual Twitter link if applicable
+        linkedinLink="https://linkedin.com/company/nito" // Replace with actual LinkedIn link if applicable
       />
     </div>
   );
