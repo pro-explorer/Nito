@@ -7,72 +7,106 @@ import { useParams, useRouter } from "next/navigation";
 
 const navigationItems: SidebarItem[] = [
   {
-    name: "Overview",
+    name: "Statistics",
     href: "/",
     icon: Globe,
     type: "item",
   },
   {
     type: 'label',
-    name: 'Management',
+    name: 'Orders & Subscriptions',
   },
   {
-    name: "Products",
-    href: "/products",
+    name: "New Order",
+    href: "/new-order",
     icon: ShoppingBag,
     type: "item",
   },
   {
-    name: "People",
-    href: "/people",
+    name: "Order Logs",
+    href: "/order-logs",
     icon: Users,
     type: "item",
   },
   {
-    name: "Segments",
-    href: "/segments",
+    name: "Drip-feed",
+    href: "/drip-feed",
     icon: Columns3,
     type: "item",
   },
   {
-    name: "Regions",
-    href: "/regions",
+    name: "REAL-FN Follows",
+    href: "/real-fn-follows",
     icon: Locate,
     type: "item",
   },
   {
     type: 'label',
-    name: 'Monetization',
+    name: 'Services & Funds',
   },
   {
-    name: "Revenue",
-    href: "/revenue",
+    name: "Subscriptions",
+    href: "/subscriptions",
     icon: BarChart4,
     type: "item",
   },
   {
-    name: "Orders",
-    href: "/orders",
+    name: "Refill",
+    href: "/refill",
     icon: ShoppingCart,
     type: "item",
   },
   {
-    name: "Discounts",
-    href: "/discounts",
+    name: "Add Funds",
+    href: "/add-funds",
+    icon: BadgePercent,
+    type: "item",
+  },
+  {
+    name: "Transaction Logs",
+    href: "/transaction-logs",
     icon: BadgePercent,
     type: "item",
   },
   {
     type: 'label',
-    name: 'Settings',
+    name: 'Support & FAQs',
   },
   {
-    name: "Configuration",
-    href: "/configuration",
+    name: "Tickets",
+    href: "/tickets",
+    icon: Settings2,
+    type: "item",
+  },
+  {
+    name: "FAQs",
+    href: "/faqs",
+    icon: Settings2,
+    type: "item",
+  },
+  {
+    type: 'label',
+    name: 'Legal',
+  },
+  {
+    name: "Terms & Conditions",
+    href: "/terms",
+    icon: Settings2,
+    type: "item",
+  },
+  {
+    type: 'label',
+    name: 'Other',
+  },
+  {
+    name: "Order",
+    href: "/order",
     icon: Settings2,
     type: "item",
   },
 ];
+
+
 
 export default function Layout(props: { children: React.ReactNode }) {
   const params = useParams<{ teamId: string }>();
